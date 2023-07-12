@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.circles {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(222, 247, 247);
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-g {
+    background-color: green;
+    width: 630px;
+    height: 630px;
+    margin: -315px 0 0 -315px;
+}
+
+.circle-r {
+    background-color: red;
+    width: 420px;
+    height: 420px;
+    margin: -210px 0 0 -210px;
+}
+
+.circle-p {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+}
+
+.cursor {
+    position: fixed;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -10px 0 0 -10px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    mix-blend-mode: screen;
+}
+
+.content h1 {
+    font-size: 9rem;
+    text-align: center;
+}
